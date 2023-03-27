@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>DrinkStar</title>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <h2 class="visually-hidden">DrinkStar Header</h2>
+    <a href="#" class="logo header__logo">
+      <img loading="lazy" src="img/logo.png" class="image" width="210" height="10" alt="Логотип DrinkStar">
+    </a>
+    <div class="header__search">
+      <button class="btn-reset header__catalog" aria-label="Открыть каталог">Catalogue
+        <span class="header__catalog--line"></span>
+        <span class="header__catalog--line"></span>
+        <span class="header__catalog--line"></span>
+      </button>
+      <input class="header__input" type="text" placeholder="Search">
+    </div>
+    <nav class="nav" title="Меню сайта" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>FAQ</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>Contacts</a></li>
+      </ul>
+      <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
+    </nav>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+    <div class="header__btns">
+      <button class="btn-reset header__star">
+        <picture>
+          <source srcset="img/star.webp" type="image/webp">
+          <img loading="lazy" src="img/star.png" class="image" width="30" height="30" alt="Рейтинг">
+        </picture>
+      </button>
+      <button class="btn-reset header__client">
+        <picture>
+          <source srcset="img/client.webp" type="image/webp">
+          <img loading="lazy" src="img/client.png" class="image" width="32" height="32" alt="Фото клиента">
+        </picture>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="product">
+  <div class="container product__container">
+    <div class="product__images">
+      <ul class="list-reset product__list">
+        <li class="product__item"><a href="#" class="product__link">Catalog</a></li>
+        <li class="product__item"><a href="#" class="product__link">Whiskey</a></li>
+        <li class="product__item"><a href="#" class="product__link product__link--active">Whiskey Writers' Tears Red Head, Writers’ Tears</a></li>
+      </ul>
+      <div class="swiper">
+        <div class="swiper__nav">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/product.png" alt="product"></div>
+            <div class="swiper-slide"><img src="img/product2.png" alt="product2"></div>
+            <div class="swiper-slide"><img src="img/product3.png" alt="product3"></div>
+            <div class="swiper-slide"><img src="img/product4.png" alt="product4"></div>
+            <div class="swiper-slide"><img src="img/product5.png" alt="product5"></div>
+          </div>
+        </div>
+        <div class="swiper__main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/product.png" alt="product"><button class="btn-reset swiper__share"></button></div>
+            <div class="swiper-slide"><img src="img/product2.png" alt="product2"><button class="btn-reset swiper__share"></button></div>
+            <div class="swiper-slide"><img src="img/product3.png" alt="product3"><button class="btn-reset swiper__share"></button></div>
+            <div class="swiper-slide"><img src="img/product4.png" alt="product4"><button class="btn-reset swiper__share"></button></div>
+            <div class="swiper-slide"><img src="img/product5.png" alt="product5"><button class="btn-reset swiper__share"></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__descr">
+      <div class="product__versions version">
+        <ul class="list-reset version__list">
+          <li class="version__item"><button class="btn-reset version__btn version__btn--active">Version 1</button></li>
+          <li class="version__item"><button class="btn-reset version__btn">Version 2</button></li>
+          <li class="version__item"><button class="btn-reset version__btn">Version 3</button></li>
+        </ul>
+        <button class="btn-reset version__btn--new">New</button>
+      </div>
+      <p class="product__brand">Writers' Tears</p>
+      <h2 class="product__name">Whiskey Writers' Tears Red Head, Writers’ Tears</h2>
+      <p class="product__txt">Speyside Single Malt Scotch Whisky Distillery Bottling</p>
+      <div class="product__rating rating" data-total-value="3">
+        <div class="rating__item" data-item-value="5">★</div>
+        <div class="rating__item" data-item-value="4">★</div>
+        <div class="rating__item" data-item-value="3">★</div>
+        <div class="rating__item" data-item-value="2">★</div>
+        <div class="rating__item" data-item-value="1">★</div>
+        <span class="rating__number">3,0</span>
+      </div>
+      <div class="product__properties">
+        <div class="volume">
+          <h3 class="volume__name">Volume (ml)</h3>
+          <ul class="list-reset volume__list">
+            <li class="volume__item"><button class="btn-reset volume__btn volume__btn--active">500</button></li>
+            <li class="volume__item"><button class="btn-reset volume__btn">700</button></li>
+            <li class="volume__item"><button class="btn-reset volume__btn">1000</button></li>
+          </ul>
+        </div>
+
+        <ul class="list-reset product__params params">
+          <li class="params__item"><h3 class="params__name">ABV (%)</h3><div class="params__value">40%</div></li>
+          <li class="params__item"><h3 class="params__name">Age</h3><div class="params__value">12</div></li>
+          <li class="params__item"><h3 class="params__name">Manufacturer</h3><div class="params__value">Writers' Tears</div></li>
+        </ul>
+      </div>
+      <div class="product__countries countries">
+        <div class="countries__origin">
+          <h4 class="countries__title">Origin</h4>
+          <div class="countries__name">Ireland, +2
+            <span class="tooltip">
+              <button class="btn-reset tooltip__btn" aria-describedby="id1">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                </svg>
+              </button>
+              <span class="tooltip__txt" role="tooltip" id="id1">
+                <span class="visually-hidden">Тултип: </span>
+                Всплывающая подсказка
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="countries__market market">
+          <div class="market__title">
+            <h4 class="countries__title">Market</h4>
+            <select class="market__select" id="country">
+              <option class="market__select--usa" value="USA" selected>USA</option>
+              <option class="market__select--ireland" value="Ireland">Ireland</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="description">
+  <div class="container description__container">
+    <h1 class="visually-hidden">DrinkStar</h1>
+    <div class="description__left">
+      <h2 class="description__title">Specifications</h2>
+      <ul class="list-reset description__list">
+        <li class="description__item"><span class="description__item--name">Name</span><span class="description__item--value">Whiskey Writers' Tears Red Head, Writers’ Tears</span></li>
+        <li class="description__item"><span class="description__item--name">Alcohol By Volume</span><span class="description__item--value">40%</span></li>
+        <li class="description__item"><span class="description__item--name">Volume (ml)</span><span class="description__item--value">700</span></li>
+        <li class="description__item"><span class="description__item--name">Excerpt</span><span>12 years old</span></li>
+        <li class="description__item"><span class="description__item--name">Alcohol By Volume</span><span class="description__item--value">40</span></li>
+      </ul>
+      <button class="btn-reset description__btn">Show more</button>
+    </div>
+    <div class="description__right">
+      <h2 class="description__title">Description</h2>
+      <p class="description__text">A distinctive feature of the production line «Sherry Oak» is maturation in sherry casks,
+        with each vintage aged in different barrels. European oak sherry casks give the whiskey
+        a rich aroma with notes of dry fruit, spices and chocolate, while American oak sherry
+        casks add tones of lemon, coconut and toffee.</p>
+      <p class="description__text">A distinctive feature of the production line «Sherry Oak» is maturation in sherry casks,
+        with each vintage aged in different barrels. European oak sherry casks give the whiskey
+        a rich aroma with notes of dry fruit, spices and chocolate, while American oak sherry
+        casks add tones of lemon, coconut coconut and toffee.</p>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews">
+  <div class="container reviews__container">
+    <div class="reviews__left">
+      <h2 class="reviews__title">Reviews <span class="reviews__total">128 reviews</span></h2>
+
+      <article class="card">
+        <div class="card__info">
+          <div class="card__client">
+            <div class="card__photo">
+              <picture>
+                <source srcset="img/client2.webp" type="image/webp">
+                <img loading="lazy" src="img/client2.png" class="image" width="60" height="60" alt="Фото клиента">
+              </picture>
+            </div>
+            <div class="card__main">
+              <div class="card__name">Roland Smith</div>
+              <div class="card__rating rating2" data-total-value="3">
+                <div class="rating2__item" data-item-value="5">★</div>
+                <div class="rating2__item" data-item-value="4">★</div>
+                <div class="rating2__item" data-item-value="3">★</div>
+                <div class="rating2__item" data-item-value="2">★</div>
+                <div class="rating2__item" data-item-value="1">★</div>
+              </div>
+            </div>
+          </div>
+          <div class="card__date">
+            <span>8 December 2022</span>
+          </div>
+        </div>
+        <div class="card__text">
+          <p class="card__descr points">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi utaliquip ex ea commodo consequat. Ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris utaliquip ex ea commodo consequat. Ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          <button class="btn-reset card__btn">More</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__info">
+          <div class="card__client">
+            <div class="card__photo">
+              <picture>
+                <source srcset="img/client2.webp" type="image/webp">
+                <img loading="lazy" src="img/client2.png" class="image" width="60" height="60" alt="Фото клиента">
+              </picture>
+            </div>
+            <div class="card__main">
+              <div class="card__name">Roland Smith</div>
+              <div class="card__rating rating2" data-total-value="3">
+                <div class="rating2__item" data-item-value="5">★</div>
+                <div class="rating2__item" data-item-value="4">★</div>
+                <div class="rating2__item" data-item-value="3">★</div>
+                <div class="rating2__item" data-item-value="2">★</div>
+                <div class="rating2__item" data-item-value="1">★</div>
+              </div>
+            </div>
+          </div>
+          <div class="card__date">
+            <span>8 December 2022</span>
+          </div>
+        </div>
+        <div class="card__text">
+          <p class="card__descr points">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi utaliquip ex ea commodo consequat. Ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris utaliquip ex ea commodo consequat. Ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          <button class="btn-reset card__btn">More</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__info">
+          <div class="card__client">
+            <div class="card__photo">
+              <picture>
+                <source srcset="img/client2.webp" type="image/webp">
+                <img loading="lazy" src="img/client2.png" class="image" width="60" height="60" alt="Фото клиента">
+              </picture>
+            </div>
+            <div class="card__main">
+              <div class="card__name">Roland Smith</div>
+              <div class="card__rating rating2" data-total-value="3">
+                <div class="rating2__item" data-item-value="5">★</div>
+                <div class="rating2__item" data-item-value="4">★</div>
+                <div class="rating2__item" data-item-value="3">★</div>
+                <div class="rating2__item" data-item-value="2">★</div>
+                <div class="rating2__item" data-item-value="1">★</div>
+              </div>
+            </div>
+          </div>
+          <div class="card__date">
+            <span>8 December 2022</span>
+          </div>
+        </div>
+        <div class="card__text">
+          <p class="card__descr points">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi utaliquip ex ea commodo consequat. Ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris utaliquip ex ea commodo consequat. Ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          <button class="btn-reset card__btn">More</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__info">
+          <div class="card__client">
+            <div class="card__photo">
+              <picture>
+                <source srcset="img/client2.webp" type="image/webp">
+                <img loading="lazy" src="img/client2.png" class="image" width="60" height="60" alt="Фото клиента">
+              </picture>
+            </div>
+            <div class="card__main">
+              <div class="card__name">Roland Smith</div>
+              <div class="card__rating rating2" data-total-value="3">
+                <div class="rating2__item" data-item-value="5">★</div>
+                <div class="rating2__item" data-item-value="4">★</div>
+                <div class="rating2__item" data-item-value="3">★</div>
+                <div class="rating2__item" data-item-value="2">★</div>
+                <div class="rating2__item" data-item-value="1">★</div>
+              </div>
+            </div>
+          </div>
+          <div class="card__date">
+            <span>8 December 2022</span>
+          </div>
+        </div>
+        <div class="card__text">
+          <p class="card__descr points">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi utaliquip ex ea commodo consequat. Ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris utaliquip ex ea commodo consequat. Ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          <button class="btn-reset card__btn">More</button>
+        </div>
+      </article>
+
+      <button class="btn-reset reviews__bt">Show more</button>
+    </div>
+    <aside class="reviews__right">
+      <div class="reviews__rating">
+        <div class="rating3" data-total-value="3">
+          <div class="rating3__list">
+            <div class="rating3__item" data-item-value="5">★</div>
+            <div class="rating3__item" data-item-value="4">★</div>
+            <div class="rating3__item" data-item-value="3">★</div>
+            <div class="rating3__item" data-item-value="2">★</div>
+            <div class="rating3__item" data-item-value="1">★</div>
+          </div>
+          <span class="rating3__number">3 out of 5</span>
+        </div>
+
+        <div class="progress">
+          <span class="progress__star">5 star</span>
+          <div class="progress__block">
+            <div class="progress__bar progress__bar--1"></div>
+          </div>
+          <span class="progress__count">34</span>
+        </div>
+        <div class="progress">
+          <span class="progress__star">4 star</span>
+          <div class="progress__block">
+            <div class="progress__bar progress__bar--2"></div>
+          </div>
+          <span class="progress__count">80</span>
+        </div>
+        <div class="progress">
+          <span class="progress__star">3 star</span>
+          <div class="progress__block">
+            <div class="progress__bar progress__bar--3"></div>
+          </div>
+          <span class="progress__count">43</span>
+        </div>
+        <div class="progress">
+          <span class="progress__star">2 star</span>
+          <div class="progress__block">
+            <div class="progress__bar progress__bar--4"></div>
+          </div>
+          <span class="progress__count">50</span>
+        </div>
+        <div class="progress">
+          <span class="progress__star">1 star</span>
+          <div class="progress__block">
+            <div class="progress__bar progress__bar--5"></div>
+          </div>
+          <span class="progress__count">12</span>
+        </div>
+      </div>
+      <button class="btn-reset reviews__btn">Add your review</button>
+    </aside>
+
+  </div>
+</section>
+
+      <section class="recomended">
+  <div class="container recomended__container">
+    <div class="recomended__top">
+      <h2 class="recomended__title">Recomended</h2>
+      <div class="recomended__pagination">
+        <button class="btn-reset swiper-button-prev" aria-label="Перейти к предыдущему слайду"></button>
+        <button class="btn-reset swiper-button-next" aria-label="Перейти к следующему слайду"></button>
+      </div>
+    </div>
+
+    <div class="swiper2 recomended__content">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="recomended__drink">
+            <div class="recomended__star">★</div>
+            <picture class="recomended__img">
+              <source srcset="img/bottle1.webp" type="image/webp">
+              <img loading="lazy" src="img/bottle1.png" class="image" width="315" height="200" alt="">
+            </picture>
+            <div class="recomended__about">
+              <div class="recomended__brand">Writers' Tears</div>
+              <div class="recomended__name">Whiskey Writers' Tears Red Head, Writers’ Tears</div>
+              <div class="recomended__descr">Speyside Single Malt Scotch Whisky Distillery Bottling</div>
+            </div>
+            <div class="recomended__options">
+              <span class="recomended__ml">500 ml</span>
+              <div class="recomended__rating rating4" data-total-value="3">
+                <div class="rating4__item" data-item-value="5">★</div>
+                <div class="rating4__item" data-item-value="4">★</div>
+                <div class="rating4__item" data-item-value="3">★</div>
+                <div class="rating4__item" data-item-value="2">★</div>
+                <div class="rating4__item" data-item-value="1">★</div>
+              </div>
+              <button class="btn-reset recomended__btn">2 versions</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="recomended__drink">
+            <div class="recomended__star">★</div>
+            <picture class="recomended__img">
+              <source srcset="img/bottle2.webp" type="image/webp">
+              <img loading="lazy" src="img/bottle2.png" class="image" width="315" height="200" alt="">
+            </picture>
+            <div class="recomended__about">
+              <div class="recomended__brand">Johnnie Walker</div>
+              <div class="recomended__name">Whiskey Mortlach 12 Years Old</div>
+              <div class="recomended__descr">Speyside Single Malt Scotch Whisky Distillery Bottling</div>
+            </div>
+            <div class="recomended__options">
+              <span class="recomended__ml">500 ml</span>
+              <div class="recomended__rating rating4" data-total-value="3">
+                <div class="rating4__item" data-item-value="5">★</div>
+                <div class="rating4__item" data-item-value="4">★</div>
+                <div class="rating4__item" data-item-value="3">★</div>
+                <div class="rating4__item" data-item-value="2">★</div>
+                <div class="rating4__item" data-item-value="1">★</div>
+              </div>
+              <button class="btn-reset recomended__btn">2 versions</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="recomended__drink">
+            <div class="recomended__star">★</div>
+            <picture class="recomended__img">
+              <source srcset="img/bottle3.webp" type="image/webp">
+              <img loading="lazy" src="img/bottle3.png" class="image" width="315" height="200" alt="">
+            </picture>
+            <div class="recomended__about">
+              <div class="recomended__brand">The Irishman</div>
+              <div class="recomended__name">Willett Family Estate Bottled Single Barrel Bourbon</div>
+              <div class="recomended__descr">6 Years Whiskey Single Malt</div>
+            </div>
+            <div class="recomended__options">
+              <span class="recomended__ml">500 ml</span>
+              <div class="recomended__rating rating4" data-total-value="3">
+                <div class="rating4__item" data-item-value="5">★</div>
+                <div class="rating4__item" data-item-value="4">★</div>
+                <div class="rating4__item" data-item-value="3">★</div>
+                <div class="rating4__item" data-item-value="2">★</div>
+                <div class="rating4__item" data-item-value="1">★</div>
+              </div>
+              <button class="btn-reset recomended__btn">2 versions</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="recomended__drink">
+            <div class="recomended__star">★</div>
+            <picture class="recomended__img">
+              <source srcset="img/bottle4.webp" type="image/webp">
+              <img loading="lazy" src="img/bottle4.png" class="image" width="315" height="200" alt="">
+            </picture>
+            <div class="recomended__about">
+              <div class="recomended__brand">Rosebank Distillery</div>
+              <div class="recomended__name">Whiskey Rosebank Aged 30 Years, Rosebank Distillery Scotch Whisky</div>
+              <div class="recomended__descr">Speyside Single Malt Scotch Whisky Distillery Bottling</div>
+            </div>
+            <div class="recomended__options">
+              <span class="recomended__ml">500 ml</span>
+              <div class="recomended__rating rating4" data-total-value="3">
+                <div class="rating4__item" data-item-value="5">★</div>
+                <div class="rating4__item" data-item-value="4">★</div>
+                <div class="rating4__item" data-item-value="3">★</div>
+                <div class="rating4__item" data-item-value="2">★</div>
+                <div class="rating4__item" data-item-value="1">★</div>
+              </div>
+              <button class="btn-reset recomended__btn">2 versions</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__top">
+      <div class="footer__left">
+        <h2 class="footer__title">Subscribe to news</h2>
+        <form action="#" class="form footer__form">
+          <label class="form__label">
+            <input type="email" name="E-mail" class="input-reset form__input input-email" placeholder="Enter your Email">
+          </label>
+          <button class="btn-reset form__btn">Subscribe</button>
+        </form>
+        <h3 class="footer__subtitle footer__subtitle--follow">Follow us</h3>
+        <ul class="list-reset footer__social social">
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--fb"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--inst"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--yout"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <div class="footer__products">
+          <h3 class="footer__subtitle">Products</h3>
+          <ul class="list-reset footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Wine</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Champagne</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Vodka</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Whiskey</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Liqueurs</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Cognac</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Gin</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Strong alcohol</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Other drinks</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h3 class="footer__subtitle">Contacts</h3>
+          <span class="footer__address">1501 Page Mill Road Palo Alto, CA 94304 Engineering Headquarters.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-container">
+      <div class="footer__terms">Term of use
+        <span class="footer__terms--privacy">Privacy</span>
+        <span class="footer__terms--policy">Policy</span>
+      </div>
+      <div class="footer__copy">2022 © DrinkStar</div>
+    </div>
+
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
